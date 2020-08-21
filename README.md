@@ -1,5 +1,5 @@
 # MyFirstSelenium-CSharp
-Selenium UI Automation using c# for Macbook
+Selenium UI Automation using c# in Visual Studio
 
 	Getting started with Selenium and C# is easy if you have the idea about connecting the right blocks for test code development. In one of the earlier blogs, 	    we covered the Selenium WebDriver architecture in great detail. This is chapter 2 of the Selenium C# tutorial series where we are going to help you set 	    up Selenium in Visual Studio for automated browser testing of your web-application. In chapter 1 we talked about the overview of Selenium C# tutorial               series. We also covered why Selenium C# is a good call for test automation. This chapter, we are going to get down to business and run your first Selenium         C# test automation script.
 
@@ -75,9 +75,7 @@ Locate the search-box on the page.
 Enter the search item as LambdaTest and click Google Search.
 We are using a basic test scenario that uses the bare minimum annotations of the NUnit framework. It is just to get you started with Selenium test automation using a test framework like NUnit.
 
-
- 
-        using NUnit.Framework;
+	using NUnit.Framework;
 	using OpenQA.Selenium;
 	using OpenQA.Selenium.Chrome;
 	using System;
@@ -106,7 +104,7 @@ We are using a basic test scenario that uses the bare minimum annotations of the
  
             IWebElement searchText = driver.FindElement(By.CssSelector("[name = 'q']"));
  
-            searchText.SendKeys("Selenium Test");
+            searchText.SendKeys("Selenium using c#");
  
             IWebElement searchButton = driver.FindElement(By.XPath("//div[@class='FPdoLc tfB0Bf']//input[@name='btnK']"));
  
@@ -145,7 +143,7 @@ The test implementation is under the [Test] attribute. The necessary web element
     	System.Threading.Thread.Sleep(2000);
     	IWebElement searchText = driver.FindElement(By.CssSelector("[name = 'q']"));
  
-    	searchText.SendKeys("LambdaTest");
+    	searchText.SendKeys("Selenium using c#");
  
     	......................................
     	......................................
